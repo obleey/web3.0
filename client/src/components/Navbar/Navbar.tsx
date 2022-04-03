@@ -2,15 +2,7 @@ import React, { useState } from "react";
 import logo from "../../images/logo.png";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-
-interface Props {
-  title: string;
-  classProps?: string;
-}
-
-const NavbarItem: React.FC<Props> = ({ title, classProps }) => {
-  return <li className={`mx-4 cursor-pointer ${classProps}`}>{title}</li>;
-};
+import NavbarItem from "../NavbarItem/NavbarItem";
 
 const Navbar: React.FC = () => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
