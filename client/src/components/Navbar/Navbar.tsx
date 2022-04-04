@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import logo from "../../images/logo.png";
 import { HiMenuAlt4 } from "react-icons/hi";
 import { AiOutlineClose } from "react-icons/ai";
-import NavbarItem from "../NavbarItem/NavbarItem";
+import {NavbarItem} from "../index";
 
 const Navbar: React.FC = () => {
   const [toggleMenu, setToggleMenu] = useState<boolean>(false);
